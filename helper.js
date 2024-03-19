@@ -42,7 +42,6 @@ document.getElementById('imageUpload').addEventListener('change', (event) => {
 });
 
 function getPredictionDescription(predictions) {
-    // Generate the description based on the best prediction
     if (predictions.probability.toFixed(2) < 0.6) return `could be ${predictions.className}`;
     if (predictions.probability.toFixed(2) >= 0.6 && predictions.probability.toFixed(2) < 0.8) return `is likely ${predictions.className}`;
     if (predictions.probability.toFixed(2) >= 0.8) return `is ${predictions.className}`;
