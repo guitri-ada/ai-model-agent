@@ -2,7 +2,6 @@ const URL_MALE_FEMALE = 'https://teachablemachine.withgoogle.com/models/Yi7gkyK0
 const URL_HAIR_COLOR = 'https://teachablemachine.withgoogle.com/models/JzL1serW6/';
 const URL_AGE = 'https://teachablemachine.withgoogle.com/models/XUU4jnGiO/';
 
-
 let modelMaleFemale, modelHairColor, modelAge;
 let imgElement;
 
