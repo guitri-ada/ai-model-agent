@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Classifier</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+</head>
+<body>
+
+<div class="container text-center">
+    <h1>AI Image Classifier</h1>
+    <p>Upload an image to classify into:</p>
+    <p>Male or Female - Light Hair or Dark Hair - Young or Old</p>
+
+    <div id="imageContainer">
+        <label for="imageUpload">Click to upload image</label>
+        <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg" class="btn btn-primary"/>
+    </div>
+
+    <button onclick="classifyImage()" class="btn btn-success">Classify Image</button>
+
+    <div id="results"></div>
+</div>
+
+<script src="./helper.js"></script>
+</body>
+</html>
